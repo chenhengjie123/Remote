@@ -435,7 +435,7 @@ static int skipEcho, pending;
                     if ( !event )
                         event = [[objc_getClass("UITouchesEvent") alloc] _init];
                     [event _clearTouches];
-                    [event _addTouch:currentTouch forDelayedDelivery:NO];
+//                    [event _addTouch:currentTouch forDelayedDelivery:NO];
                     if ( currentTouch2 )
                         [event _addTouch:currentTouch2 forDelayedDelivery:NO];
 
